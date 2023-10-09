@@ -2,7 +2,7 @@
 
 Proyecto realizado con HTML, CSS y Bootstrap 5.3.
 
-# 💻 Conf Bs As Primera parte
+# 💻 Conf Bs As 
 
 El trabajo práctico consiste en replicar el siguiente modelo de página
 
