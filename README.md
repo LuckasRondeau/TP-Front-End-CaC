@@ -1,6 +1,5 @@
 ## Trabajo Práctico Integrador Front-End Codo a Codo 4.0 FullStack Java
 
-
 Proyecto realizado con HTML, CSS y Bootstrap 5.3.
 
 # 💻 Conf Bs As Primera parte
