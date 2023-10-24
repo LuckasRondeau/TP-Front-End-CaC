@@ -14,7 +14,7 @@ categorías, Estudiante, Trainee, Junior.
 
 <br>
 
-![Final_js_front_2021]()
+![Final_js_front_2021](./src/resources/img/Final_js_front_2021.png)
 
 <br>
 <hr>
