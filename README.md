@@ -12,4 +12,4 @@ El trabajo práctico consiste en replicar el siguiente modelo de página
 <hr>
 <h3 align="center"> 
 
-[Ver Aqui](https://luckasrondeau.github.io/TP-Front-End-CaC/)</h3>
+[LINK](https://luckasrondeau.github.io/TP-Front-End-CaC/)</h3>
