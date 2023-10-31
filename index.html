@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>TP-Front-End-CaC</title>
+  <link rel="shortcut icon" href="./images/codoacodo.png" type="image/x-icon">
   <!-- Incluye el archivo CSS de Bootstrap -->
-  <link rel="stylesheet" href="./src/resources/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/bootstrap.min.css" type="text/css" />
   <!-- Incluye el archivo CSS personalizado -->
-  <link rel="stylesheet" href="./src/resources/css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <a class="navbar-brand" href="index.html">
-            <img id="logo-pagina" src="./src/resources/img/codoacodo.png" width="100" alt="Logo de la pagina">
+            <img id="logo-pagina" src="./images/codoacodo.png" width="100" alt="Logo de la pagina">
             <span class="nombre-logo">Conf Bs As</span>
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-e">
@@ -39,7 +40,7 @@
               <a class="nav-link" href="#">Convierte en Orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-verde" href="#">Comprar tickets</a>
+              <a class="nav-link link-verde" href="./pages/tickets.html">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -52,13 +53,13 @@
   <div id="carouselExample" class="carousel slide card-superpuesta" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./src/resources/img/ba1.jpg" class="d-block w-100" alt="Buenos Aires">
+        <img src="./images/ba1.jpg" class="d-block w-100" alt="Buenos Aires">
       </div>
       <div class="carousel-item">
-        <img src="./src/resources/img/ba2.jpg" class="d-block w-100" alt="Buenos Aires">
+        <img src="./images/ba2.jpg" class="d-block w-100" alt="Buenos Aires">
       </div>
       <div class="carousel-item">
-        <img src="./src/resources/img/ba3.jpg" class="d-block w-100" alt="Obelisco">
+        <img src="./images/ba3.jpg" class="d-block w-100" alt="Obelisco">
       </div>
     </div>
 
@@ -75,7 +76,7 @@
         </p>
         <div>
           <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-          <button type="button" class="btn btn-success">Comprar Tickets</button>
+          <button type="button" class="btn btn-success" onclick="location.href='./pages/tickets.html'">Comprar Tickets</button>
         </div>
       </div>
     </div>
@@ -91,7 +92,7 @@
       <div class="row">
         <div class="card-oradores col-lg-4">
           <div class="card">
-            <img src="./src/resources/img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+            <img src="./images/steve.jpg" class="card-img-top" alt="Steve Jobs">
             <div class="card-body">
               <div class="badges-contenedor">
                 <span class="badge text-bg-warning">JavaScript</span>
@@ -106,7 +107,7 @@
         </div>
         <div class="card-oradores col-lg-4">
           <div class="card">
-            <img src="./src/resources/img/bill.jpg" class="card-img-top" alt="Bill Gates">
+            <img src="./images/bill.jpg" class="card-img-top" alt="Bill Gates">
             <div class="card-body">
               <div class="badges-contenedor">
                 <span class="badge text-bg-warning">JavaScript</span>
@@ -121,7 +122,7 @@
         </div>
         <div class="card-oradores col-lg-4">
           <div class="card">
-            <img src="./src/resources/img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+            <img src="./images/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
             <div class="card-body">
               <div class="badges-contenedor">
                 <span class="badge text-bg-secondary">JavaScript</span>
@@ -144,16 +145,16 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./src/resources/img/honolulu.jpg" class="d-block w-100" alt="Honolulu">
+              <img src="./images/honolulu.jpg" class="d-block w-100" alt="Honolulu">
             </div>
             <div class="carousel-item">
-              <img src="./src/resources/img/hawaii.jpg" class="d-block w-100" alt="Buenos Aires">
+              <img src="./images/hawaii.jpg" class="d-block w-100" alt="Buenos Aires">
             </div>
             <div class="carousel-item">
-              <img src="./src/resources/img/hawaii2.jpg" class="d-block w-100" alt="Buenos Aires">
+              <img src="./images/hawaii2.jpg" class="d-block w-100" alt="Buenos Aires">
             </div>
             <div class="carousel-item">
-              <img src="./src/resources/img/hawaii3.jpg" class="d-block w-100" alt="Buenos Aires">
+              <img src="./images/hawaii3.jpg" class="d-block w-100" alt="Buenos Aires">
             </div>
           </div>
         </div>
@@ -216,9 +217,8 @@
     </div>
   </footer>
   <!-- Archivos JavaScript -->
-  <script src="./src/resources/js/main.js"></script>
+  
   <!-- Archivos JavaScript de Bootstrap y jQuery (si es necesario) -->
-  <script src="./src/resources/js/bootstrap.min.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
 </body>
-
 </html>

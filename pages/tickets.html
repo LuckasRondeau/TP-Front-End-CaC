@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tickets</title>
+    <link rel="shortcut icon" href="../images/codoacodo.png" type="image/x-icon">
+    <!-- Incluye el archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" type="text/css" />
+    <!-- Incluye el archivo CSS personalizado -->
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
+</head>
+<body>
+    <!-- barra de navegación Bootstrap -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary px-5 py-2 fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <a class="navbar-brand" href="../index.html">
+                        <img id="logo-pagina" src="../images/codoacodo.png" width="100" alt="Logo de la pagina">
+                        <span class="nombre-logo">Conf Bs As</span>
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-e">
+                        <li class="nav-item cursor-pointer">
+                            <a class="nav-link active" aria-current="page" href="#">Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fecha y Lugar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Convierte en Orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-verde" href="tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container grupo-tickets">
+        <div class="row row-group d-flex justify-content-center align-items-center g-1">
+            <div class="card card-tickets card-tickets-estudiante col-md-3">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Estudiante</b></h5>
+                    <p class="card-text pt-2">Tienen descuento</p>
+                    <h6><b>80%</b></h6>
+                    <p class="card-text pt-2"><small class="text-body-secondary">* presentar documentación</small></p>
+                </div>
+            </div>
+            <div class="card card-tickets card-tickets-trainee mx-2 col-md-3">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Trainee</b></h5>
+                    <p class="card-text pt-2">Tienen descuento</p>
+                    <h6><b>50%</b></h6>
+                    <p class="card-text pt-2"><small class="text-body-secondary">* presentar documentación</small></p>
+                </div>
+            </div>
+            <div class="card card-tickets card-tickets-junior col-md-3">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Junior</b></h5>
+                    <p class="card-text pt-2">Tienen descuento</p>
+                    <h6><b>15%</b></h6>
+                    <p class="card-text pt-2"><small class="text-body-secondary">* presentar documentación</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3 mb-4">
+        <p class="m-0">VENTA</p>
+        <h2>VALOR DEL TICKET $ 200</h2>
+    </div>
+    <!-- Form -->
+    <form action="" class="formulario-tickets" id="formulario-tickets">
+        <div>
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+                <div class="col-12 mt-3">
+                    <input type="email" class="form-control" placeholder="name@example.com" aria-label="Correo">
+                </div>
+                <div class="col-6 mt-3">
+                    <!-- <label for="" class="ps-1">Cantidad</label> -->
+                    <input type="text" class="form-control mt-2" id="input-cantidad" placeholder="Cantidad"
+                        aria-label="Cantidad" required>
+                </div>
+
+                <div class="col-6 mt-3">
+                    <!-- <label for="" class="ps-1">Categoría</label> -->
+                    <select class="form-select select-tickets mt-2" id="select-tickets"
+                        aria-label="Default select example">
+                        <option selected>Selecciona una Categoría</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                        <option value="4">General</option>
+                    </select>
+                </div>
+                <div class="col-12 mt-4">
+                    <input type="text" class="form-control form-control-lg total-pagar" id="input-total-pagar"
+                        placeholder="Total a pagar: $" aria-label="Total" disabled>
+                </div>
+                <div class="container-btn-tickets d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success btn-ticket mt-4 p-2"
+                        onclick="borrar();">Borrar</button>
+                    <button type="submit" class="btn btn-success btn-ticket mt-4 p-2"
+                        onclick="montoPagar();">Resumen</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-lista justify-content-center align-items-center">
+            <a class="nav-link footer-link text-center" href="#">Preguntas<br>Frecuentes</a>
+            <a class="nav-link footer-link text-center" href="#">Contáctanos</a>
+            <a class="nav-link footer-link text-center" href="#">Prensa</a>
+            <a class="nav-link footer-link text-center" href="#">Conferencia</a>
+            <a class="nav-link footer-link text-center" href="#">Términos y <br> Condiciones</a>
+            <a class="nav-link footer-link text-center" href="#">Privacidad</a>
+            <a class="nav-link footer-link text-center" href="#">Estudiantes</a>
+        </div>
+    </footer>
+
+    <!-- Archivos JavaScript de Bootstrap y jQuery (si es necesario) -->
+    <script src="../scripts/bootstrap.min.js"></script>
+    <!--- Librería Sweet Alert (Personaliza las alertas => https://sweetalert2.github.io/ --->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--- Importa tickets.js --->
+    <script src="../scripts/tickets.js"></script>
+</body>
+</html>
