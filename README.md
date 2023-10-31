@@ -1,7 +1,7 @@
 ## Trabajo Práctico Integrador Front-End Codo a Codo 4.0 
 El TP consiste en replicar la siguiente imagen utilizando HTML, CSS y Bootstrap.
 
-![final_front_2021](./src/resources/img/final_front_2021.jpg)
+![final_front_2021](./images/final_front_2021.jpg)
 
 <hr>
 
@@ -14,7 +14,7 @@ categorías, Estudiante, Trainee, Junior.
 
 <br>
 
-![Final_js_front_2021](./src/resources/img/Final_js_front_2021.png)
+![Final_js_front_2021](./images/Final_js_front_2021.png)
 
 <br>
 <hr>
